@@ -1,0 +1,14 @@
+<div class='container px-5 px-sm-0'>
+  <div class='row'>
+      <div class='col-md-12 '>
+
+    <% if @users.empty? %>
+      <h1>ユーザーはいません</h1>
+    <% else %>
+
+      <h2>Follow Users</h2>
+      <%= render 'users/index',users: @users %>
+      </div>
+    <% end %>
+  </div>
+</div>
